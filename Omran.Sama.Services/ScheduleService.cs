@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Services
 {
-  public   class ScheduleService
+    public class ScheduleService : IScheduleService
     {
         // this is the database path
         private readonly string fullPath = DbConstants.DbPath + DbConstants.ScheduleFile;
@@ -35,7 +35,7 @@ namespace Omran.Sama.Services
 
         }
 
-       public List<Schedule> Load()
+        public List<Schedule> Load()
         {
             if (File.Exists(this.fullPath))
             {
@@ -43,12 +43,12 @@ namespace Omran.Sama.Services
                 string content = File.ReadAllText(this.fullPath);
                 List<Schedule> schedules = JsonConvert.DeserializeObject<List<Schedule>>(content);
 
-                return schedules ;
+                return schedules;
             }
             return null;
 
         }
-       public  Schedule LoadById(int id)
+        public Schedule LoadById(int id)
         {
             try
             {
@@ -65,19 +65,19 @@ namespace Omran.Sama.Services
             }
 
         }
-      public  bool Add(Schedule schedule)
+        public bool Add(Schedule schedule)
         {
+            return true;
+        }
+        public bool Remove(int id)
+        {
+            return true;
 
         }
-        bool Remove(int id)
+        public bool Update(Schedule schedule)
         {
 
-
-        }
-        bool Update(Schedule schedule)
-        {
-
-
+            return true;
 
         }
 
