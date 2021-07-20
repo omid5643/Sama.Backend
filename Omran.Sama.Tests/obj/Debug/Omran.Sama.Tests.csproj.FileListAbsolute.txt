@@ -1,0 +1,32 @@
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Tests.exe.config
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Tests.exe
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Tests.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Models.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Services.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Models.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Services.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.csprojResolveAssemblyReference.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.csproj.CoreCompileInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.csproj.CopyComplete
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.exe
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Commen.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Tests.exe.config
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Tests.exe
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Tests.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Commen.dll
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Models.dll
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Services.dll
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Models.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Omran.Sama.Services.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.csproj.AssemblyReference.cache
+C:\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.csproj.CoreCompileInputs.cache
+C:\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.csproj.CopyComplete
+C:\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.exe
+C:\Projects\Omran.Sama\Omran.Sama.Tests\obj\Debug\Omran.Sama.Tests.pdb

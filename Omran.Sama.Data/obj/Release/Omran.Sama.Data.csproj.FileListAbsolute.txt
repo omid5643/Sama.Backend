@@ -1,0 +1,6 @@
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Data\bin\Release\Omran.Sama.Data.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Data\bin\Release\Omran.Sama.Data.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Data\obj\Release\Omran.Sama.Data.csprojResolveAssemblyReference.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Data\obj\Release\Omran.Sama.Data.csproj.CoreCompileInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Data\obj\Release\Omran.Sama.Data.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Data\obj\Release\Omran.Sama.Data.pdb

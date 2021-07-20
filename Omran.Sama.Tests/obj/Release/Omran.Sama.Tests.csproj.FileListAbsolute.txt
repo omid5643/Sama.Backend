@@ -1,0 +1,12 @@
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Tests.exe.config
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Tests.exe
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Tests.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Models.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Services.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Models.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\bin\Release\Omran.Sama.Services.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Release\Omran.Sama.Tests.csprojResolveAssemblyReference.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Release\Omran.Sama.Tests.csproj.CoreCompileInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Release\Omran.Sama.Tests.csproj.CopyComplete
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Release\Omran.Sama.Tests.exe
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Tests\obj\Release\Omran.Sama.Tests.pdb

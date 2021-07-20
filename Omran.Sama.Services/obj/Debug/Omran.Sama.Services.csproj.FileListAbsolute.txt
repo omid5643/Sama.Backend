@@ -1,0 +1,26 @@
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Services.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Services.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.csprojResolveAssemblyReference.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.csproj.CoreCompileInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Models.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Models.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.csproj.CopyComplete
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Commen.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Services.dll
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Services.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Commen.dll
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Models.dll
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Omran.Sama.Models.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Services\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.csproj.AssemblyReference.cache
+C:\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.csproj.CoreCompileInputs.cache
+C:\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.csproj.CopyComplete
+C:\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.dll
+C:\Projects\Omran.Sama\Omran.Sama.Services\obj\Debug\Omran.Sama.Services.pdb

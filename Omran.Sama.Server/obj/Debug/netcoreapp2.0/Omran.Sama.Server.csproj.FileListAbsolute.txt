@@ -1,0 +1,41 @@
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.deps.json
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.runtimeconfig.json
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.runtimeconfig.dev.json
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.csprojResolveAssemblyReference.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.csproj.CoreCompileInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.AssemblyInfoInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.AssemblyInfo.cs
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Commen.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Models.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Services.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Services.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Commen.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Models.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.csproj.CopyComplete
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\proc.json
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\proc.json
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.deps.json
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.runtimeconfig.json
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.runtimeconfig.dev.json
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.dll
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Server.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Commen.dll
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Models.dll
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Services.dll
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Services.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Server\bin\Debug\netcoreapp2.0\Omran.Sama.Models.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.AssemblyInfoInputs.cache
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.AssemblyInfo.cs
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.csproj.CoreCompileInputs.cache
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.csproj.CopyComplete
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.dll
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.genruntimeconfig.cache
+C:\Projects\Omran.Sama\Omran.Sama.Server\obj\Debug\netcoreapp2.0\Omran.Sama.Server.csproj.AssemblyReference.cache

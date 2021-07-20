@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Models", "Omran.Sama.Models\Omran.Sama.Models.csproj", "{781EF1FE-9FDE-49E2-AC3A-E487A8439666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Services", "Omran.Sama.Services\Omran.Sama.Services.csproj", "{FF5C102B-BE85-46B3-840C-50FC1A3519CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Tests", "Omran.Sama.Tests\Omran.Sama.Tests.csproj", "{20E0C143-C93A-4829-84AE-18778DDDC8A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omran.Sama.Server", "Omran.Sama.Server\Omran.Sama.Server.csproj", "{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Data", "Omran.Sama.Data\Omran.Sama.Data.csproj", "{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Common", "Omran.Sama.Commen\Omran.Sama.Common.csproj", "{58B5564D-219C-4BCF-B4DE-B6D7D025287B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{25706F08-177D-4715-8B96-09A62787EAE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{781EF1FE-9FDE-49E2-AC3A-E487A8439666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781EF1FE-9FDE-49E2-AC3A-E487A8439666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781EF1FE-9FDE-49E2-AC3A-E487A8439666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781EF1FE-9FDE-49E2-AC3A-E487A8439666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5C102B-BE85-46B3-840C-50FC1A3519CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5C102B-BE85-46B3-840C-50FC1A3519CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5C102B-BE85-46B3-840C-50FC1A3519CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5C102B-BE85-46B3-840C-50FC1A3519CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E0C143-C93A-4829-84AE-18778DDDC8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E0C143-C93A-4829-84AE-18778DDDC8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E0C143-C93A-4829-84AE-18778DDDC8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E0C143-C93A-4829-84AE-18778DDDC8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25706F08-177D-4715-8B96-09A62787EAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25706F08-177D-4715-8B96-09A62787EAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25706F08-177D-4715-8B96-09A62787EAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25706F08-177D-4715-8B96-09A62787EAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B12FF14-AE96-463F-89D6-C5CA453E19EC}
+	EndGlobalSection
+EndGlobal

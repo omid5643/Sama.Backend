@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  omran.sama.tests:
+    image: omransamatests
+    build:
+      context: .\Omran.Sama.Tests
+      dockerfile: Dockerfile

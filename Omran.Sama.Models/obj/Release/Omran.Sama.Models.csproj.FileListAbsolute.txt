@@ -1,0 +1,9 @@
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\bin\Release\Omran.Sama.Models.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\bin\Release\Omran.Sama.Models.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\bin\Release\Omran.Sama.Commen.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\bin\Release\Omran.Sama.Commen.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\obj\Release\Omran.Sama.Models.csprojResolveAssemblyReference.cache
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\obj\Release\Omran.Sama.Models.csproj.CoreCompileInputs.cache
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\obj\Release\Omran.Sama.Models.csproj.CopyComplete
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\obj\Release\Omran.Sama.Models.dll
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Models\obj\Release\Omran.Sama.Models.pdb

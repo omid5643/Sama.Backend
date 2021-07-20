@@ -1,0 +1,12 @@
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Commen\bin\Debug\Omran.Sama.Commen.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Commen\bin\Debug\Omran.Sama.Commen.pdb
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Common.csproj.CoreCompileInputs.cache
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Commen.dll
+c:\users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Commen.pdb
+C:\Users\mmoatamedi\documents\visual studio 2017\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Common.csprojResolveAssemblyReference.cache
+C:\Projects\Omran.Sama\Omran.Sama.Commen\bin\Debug\Omran.Sama.Commen.dll
+C:\Projects\Omran.Sama\Omran.Sama.Commen\bin\Debug\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Common.csproj.CoreCompileInputs.cache
+C:\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Commen.dll
+C:\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Commen.pdb
+C:\Projects\Omran.Sama\Omran.Sama.Commen\obj\Debug\Omran.Sama.Common.csproj.AssemblyReference.cache
