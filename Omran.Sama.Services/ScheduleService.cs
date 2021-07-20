@@ -12,5 +12,7 @@ namespace Omran.Sama.Services
 
         private readonly string fullPath = DbConstants.DbPath + DbConstants.ScheduleFile;
 
+
+
     }
 }
