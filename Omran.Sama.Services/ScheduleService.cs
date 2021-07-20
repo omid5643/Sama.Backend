@@ -9,7 +9,7 @@ namespace Omran.Sama.Services
 {
   public   class ScheduleService
     {
-
+        // this is the database path
         private readonly string fullPath = DbConstants.DbPath + DbConstants.ScheduleFile;
 
 
