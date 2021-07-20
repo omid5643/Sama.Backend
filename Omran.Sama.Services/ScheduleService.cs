@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Omran.Sama.Commen.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Omran.Sama.Services
   public   class ScheduleService
     {
 
-        //TODO : add Imp
+        private readonly string fullPath = DbConstants.DbPath + DbConstants.ScheduleFile;
 
     }
 }
