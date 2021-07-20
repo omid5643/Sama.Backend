@@ -51,6 +51,7 @@
     <Compile Include="IInstructorService.cs" />
     <Compile Include="ICourseService.cs" />
     <Compile Include="InstructorService.cs" />
+    <Compile Include="IScheduleService.cs" />
     <Compile Include="IStudentService.cs" />
     <Compile Include="Loger.cs" />
     <Compile Include="PaymentService.cs" />
