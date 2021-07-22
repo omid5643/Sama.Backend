@@ -66,19 +66,76 @@ namespace Omran.Sama.Services
 
         }
         public bool Add(Schedule schedule)
+
         {
-            return true;
+            List<Schedule> schedules = Load();
+            if(schedules!=null)
+            {
+                var matched = schedules.SingleOrDefault(x=>x.Id==schedule.Id);
+                if (matched != null)
+                    return false;
+                int greatestId = schedules.OrderByDescending(x => x.Id).Select(x => x.Id).First();
+                schedule.Id = greatestId + 1;
+                schedule.StartTime = System.TimeSpan.Zero;
+                schedule.EndTime = System.TimeSpan.Zero;
+                schedules.Add(schedule);
+                Store(schedules);
+
+                return true;
+            }
+
+            else
+            {
+                List<Schedule> newSchudles = new List<Schedule>();
+                schedule.Id = 1;
+                schedule.StartTime = System.TimeSpan.Zero;
+                schedule.EndTime = System.TimeSpan.Zero;
+
+                newSchudles.Add(schedule);
+                Store(newSchudles);
+                return true;
+            }
+
+          
         }
         public bool Remove(int id)
         {
-            return true;
+            try
+            {
+                List<Schedule> schedules = new List<Schedule>();
+                var matched = schedules.Single(x=>x.Id==id);
+                schedules.Remove(matched);
+                Store(schedules);
 
+                return true;
+            }
+            catch(Exception e)
+            {
+                Loger.Log(e.Message);
+
+                return false;
+            }
+            
         }
         public bool Update(Schedule schedule)
         {
+            try
+            {
+                List<Schedule> schedules = new List<Schedule>();
+                var foundSchedule = schedules.Single(x=>x.Id==schedule.Id);
+                foundSchedule.Id = schedule.Id;
+                foundSchedule.StartTime = schedule.StartTime;
+                foundSchedule.EndTime = schedule.EndTime;
 
-            return true;
+                return true;
+            }
 
+            catch(Exception e)
+            {
+                Loger.Log(e.Message);
+
+                return false;
+            }
         }
 
 
