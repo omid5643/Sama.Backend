@@ -30,10 +30,7 @@ namespace Omran.Sama.Services
                 return false;
 
             }
-
-
-
-        }
+    }
 
         public List<Schedule> Load()
         {
