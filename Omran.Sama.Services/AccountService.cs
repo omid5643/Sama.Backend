@@ -64,7 +64,7 @@ namespace Omran.Sama.Services
                 var matched = accounts.SingleOrDefault(x => x.Id == account.Id);
                 if (matched != null)
                     return false;
-                int greatestId = accounts.OrderByDescending(x => x).Select(x => x.Id).FirstOrDefault();
+                int greatestId = accounts.OrderByDescending(x => x.Id).Select(x => x.Id).First();
                 account.Id = greatestId + 1;
                 account.CreateBy = "System";
                 account.CreateDate = System.DateTime.Now;
@@ -151,7 +151,7 @@ namespace Omran.Sama.Services
                         {
                             //create an account for the student and add it to the list
                             Account account = new Account();
-                        int greatestId =existingAccounts.OrderByDescending(x => x).Select(x => x.Id).FirstOrDefault();
+                        int greatestId =existingAccounts.OrderByDescending(x => x.Id).Select(x => x.Id).FirstOrDefault();
                         account.Id = greatestId + 1;
                         account.ForeignId = student.Id;
                             account.Number = "000"+student.Id;

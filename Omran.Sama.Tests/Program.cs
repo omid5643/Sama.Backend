@@ -97,8 +97,13 @@ namespace Omran.Sama.Tests
             student = serializer.DeSerialize<Student>(result);
             instructor = serializer.DeSerialize<Instructor>(result1);
             #endregion
+            #region ScheduleTests
 
-
+            ScheduleServiceTests _service = new ScheduleServiceTests();
+            _service.TestAdd();
+            _service.TestRemove();
+            _service.TestUpdate();
+            #endregion
         }
     }
 }

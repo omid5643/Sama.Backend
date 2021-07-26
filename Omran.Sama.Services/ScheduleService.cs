@@ -73,8 +73,7 @@ namespace Omran.Sama.Services
                     return false;
                 int greatestId = schedules.OrderByDescending(x => x.Id).Select(x => x.Id).First();
                 schedule.Id = greatestId + 1;
-              //  schedule.StartTime = System.TimeSpan.Zero;
-              //  schedule.EndTime = System.TimeSpan.Zero;
+             
                 schedules.Add(schedule);
                 Store(schedules);
 
@@ -85,9 +84,6 @@ namespace Omran.Sama.Services
             {
                 List<Schedule> newSchudles = new List<Schedule>();
                 schedule.Id = 1;
-             //   schedule.StartTime = default;
-             //   schedule.EndTime = System.TimeSpan.Zero;
-
                 newSchudles.Add(schedule);
                 Store(newSchudles);
                 return true;
@@ -99,7 +95,7 @@ namespace Omran.Sama.Services
         {
             try
             {
-                List<Schedule> schedules = new List<Schedule>();
+                List<Schedule> schedules = Load();
                 var matched = schedules.Single(x=>x.Id==id);
                 schedules.Remove(matched);
                 Store(schedules);
@@ -118,7 +114,7 @@ namespace Omran.Sama.Services
         {
             try
             {
-                List<Schedule> schedules = new List<Schedule>();
+                List<Schedule> schedules = Load();
                 var foundSchedule = schedules.Single(x=>x.Id==schedule.Id);
                 foundSchedule.Id = schedule.Id;
                 foundSchedule.StartTime = schedule.StartTime;
