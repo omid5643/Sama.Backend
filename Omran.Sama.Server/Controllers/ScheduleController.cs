@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Omran.Sama.Server
+namespace Omran.Sama.Server.Controllers
 {
     [Route(RouteConstants.ScheduleRout)]
     public class ScheduleController:Controller
@@ -43,7 +43,7 @@ namespace Omran.Sama.Server
             return _service.Add(schedule);
         }
         [HttpPost("[Action]")]
-        public bool Remove([FromBody]int id)
+        public bool Remove(int id)
         {
 
             return _service.Remove(id);

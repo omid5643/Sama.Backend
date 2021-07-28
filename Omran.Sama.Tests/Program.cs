@@ -100,6 +100,7 @@ namespace Omran.Sama.Tests
             #region ScheduleTests
 
             ScheduleServiceTests _service = new ScheduleServiceTests();
+            _service.Testload();
             _service.TestAdd();
             _service.TestRemove();
             _service.TestUpdate();

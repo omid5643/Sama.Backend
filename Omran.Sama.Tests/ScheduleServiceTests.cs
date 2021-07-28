@@ -34,7 +34,7 @@ namespace Omran.Sama.Tests
         {
 
 
-            scheduleService.Remove(1);
+            scheduleService.Remove(19);
 
         }
 

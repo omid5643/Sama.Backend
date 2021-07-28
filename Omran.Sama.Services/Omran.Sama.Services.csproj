@@ -47,6 +47,7 @@
     <Compile Include="BankService.cs" />
     <Compile Include="CourseService.cs" />
     <Compile Include="EnrollmentService.cs" />
+    <Compile Include="IAccountService.cs" />
     <Compile Include="IEnrollmentService.cs" />
     <Compile Include="IInstructorService.cs" />
     <Compile Include="ICourseService.cs" />
