@@ -39,16 +39,16 @@ namespace Omran.Sama.Tests
        }
         public void TestRemove()
         {
-            bool succeded = service.Remove(11);
+            bool succeded = service.Remove(2);
         }
         public void TestRemoveMany()
         {
-            List<int> ids = new List<int> { 14,15,16,17};
+            List<int> ids = new List<int> {2,20,21,23};
             service.RemoveMany(ids);
         }
         public void TestName()
         {
-          List<Student>st =service.GetByName("SAhar"," ghoresi"); 
+          List<Student>st =service.GetByName("omid","Abaei"); 
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using Omran.Sama.Models;
+﻿using omran.sama.tests;
+using Omran.Sama.Models;
 using Omran.Sama.Services;
 using Omran.Sama.Tests.GenericExample;
 using System.Collections.Generic;
@@ -7,8 +8,31 @@ namespace Omran.Sama.Tests
 {
     class Program
     {
+        static string[] Revers(string[] names)
+        {
+
+          //  names =["hasan", "ali", "hossine"];
+
+            string[] reversNames = new string[names.Length];
+            int j = 0;
+            for (int i = names.Length - 1; i >= 0; i--)
+            {
+               // int j = names.Length - i - 1;
+                reversNames[j] = names[i];
+                j++;
+            }
+
+            return reversNames;
+            System.Console.WriteLine(reversNames);
+
+        }
         static void Main(string[] args)
         {
+            var names = new string[]{ "hasan", "ali", "hossine"};
+            var res=Program.Revers(names);
+
+
+
 
             #region StudentServiceTests
             StudentServiceTests studentServiceTest = new StudentServiceTests();
@@ -26,20 +50,20 @@ namespace Omran.Sama.Tests
              instructorServiceTests.TestLoad();
              instructorServiceTests.TestAdd();
              instructorServiceTests.TestUpdate();
-             instructorServiceTests.TestGetInstructorsNameByName();
+            instructorServiceTests.TestGetInstructorsNameByName();
              instructorServiceTests.TestRemove();
             instructorServiceTests.TestLoadById();
             #endregion
             #region CourseServiceTests
 
             CourseServiceTests courseServiceTests = new CourseServiceTests();
-            //courseServiceTests.TestLoad();
-            //courseServiceTests.TestAdd();
-            //courseServiceTests.TestLoadById();
-            //courseServiceTests.TestRemove();
-            //courseServiceTests.TestUpdate();
-            //courseServiceTests.TestRemoveMany();
-            //courseServiceTests.TestSetCost();
+            courseServiceTests.TestLoad();
+            courseServiceTests.TestAdd();
+            courseServiceTests.TestLoadById();
+            courseServiceTests.TestRemove();
+            courseServiceTests.TestUpdate();
+            courseServiceTests.TestRemoveMany();
+            courseServiceTests.TestSetCost();
          
 
             #endregion
@@ -71,10 +95,8 @@ namespace Omran.Sama.Tests
 
             #region PaymentServiceTests
             PaymentServiceTests paymentServiceTests = new PaymentServiceTests();
-            // paymentServiceTests.TestSubmit();
-            //paymentServiceTests.TestGetSumOfPayments();
-            //paymentServiceTests.TestGetSumOfPaymentsStudent();
-            paymentServiceTests.GetStudentPaymentReport();
+           
+
 
 
             #endregion
@@ -105,6 +127,13 @@ namespace Omran.Sama.Tests
             _service.TestRemove();
             _service.TestUpdate();
             #endregion
+
+        
+
         }
+
+
+
+        
     }
 }

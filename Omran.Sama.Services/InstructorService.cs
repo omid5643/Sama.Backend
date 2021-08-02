@@ -61,7 +61,7 @@ namespace Omran.Sama.Services
         public bool Add(Instructor instructor)
         {
             List<Instructor> instructors = Load();
-            if (instructors != null)
+            if (instructors != null && instructors.Count()>0)
             {
                 var matched = instructors.SingleOrDefault(x => x.Id == instructor.Id);
                 if (matched != null)
@@ -122,6 +122,21 @@ namespace Omran.Sama.Services
             }
         }
 
+        public void RemoveMany(List<int> ids)
+        {
+            {
+                List<Instructor> instructors = Load();
+                var instructorsToRemove = instructors.Where(x => ids.Contains(x.Id)).ToList();
+                if (instructorsToRemove != null && instructorsToRemove.Count() > 0)
+                {
+                    instructors.RemoveAll(x => instructorsToRemove.Select(y => y.Id).Contains(x.Id));
+                }
+                Store(instructors);
+
+            }
+
+        }
+
         public bool Update(Instructor instructor)
         {
             try
@@ -131,9 +146,9 @@ namespace Omran.Sama.Services
                 instructorToUpdate.Id = instructor.Id;
                 instructorToUpdate.FirstName = instructor.FirstName;
                 instructorToUpdate.LastName = instructor.LastName;
-                instructorToUpdate.Age = instructor.Age;
                 instructorToUpdate.PhoneNumber = instructor.PhoneNumber;
                 instructorToUpdate.Address = instructor.Address;
+                instructorToUpdate.Email = instructor.Email;
                 instructorToUpdate.CreateBy = instructor.CreateBy;
                 instructorToUpdate.CreateDate = instructor.CreateDate;
                 Store(instructors);

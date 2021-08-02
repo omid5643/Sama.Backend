@@ -8,7 +8,7 @@ namespace Omran.Sama.Models
 {
      public class Entity
     {
+        public int Id {get; set;}
 
-        public int Id { get; set; }
     }
 }

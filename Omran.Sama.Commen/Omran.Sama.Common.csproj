@@ -51,7 +51,7 @@
     <Compile Include="Enums\Roll.cs" />
     <Compile Include="Enums\Grade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Semester.cs" />
+    <Compile Include="Enums\Semester.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,7 +8,6 @@ namespace Omran.Sama.Models
 {
    public class User:Entity
     {
-
         public string FirstName { get;set;}
         public string LastName { get; set; }
         public string UserName { get; set; }

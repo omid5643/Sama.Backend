@@ -60,10 +60,10 @@ namespace Omran.Sama.Services
         public bool Add(Course course)
         {
             List<Course> courses = Load();
-            if (courses != null)
+            if (courses!= null && courses.Count()>0)
             {
-                var matched = courses.SingleOrDefault(x => x.Id == course.Id);
-                if (matched != null)
+                var matched =courses.SingleOrDefault(x =>x.Id == course.Id);
+                if (matched!= null)
                     return false;
                 //Find Greatest Id In DB
                 int greatestId = courses.OrderByDescending(x => x.Id).Select(x => x.Id).First();
@@ -141,6 +141,7 @@ namespace Omran.Sama.Services
                 updatecourse.Id = course.Id;
                 updatecourse.Name = course.Name;
                 updatecourse.PreReqId = course.PreReqId;
+                updatecourse.Cost=course.Cost;
                 updatecourse.Credit = course.Credit;
                 updatecourse.CreatDate = course.CreatDate;
                 updatecourse.CreatedBy = course.CreatedBy;

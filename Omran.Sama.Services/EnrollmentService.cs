@@ -67,7 +67,7 @@ namespace Omran.Sama.Services
         {
 
             List<Enrollment> enrollments = Load();
-            if (enrollments != null)
+            if (enrollments != null && enrollments.Count() > 0)
             {
                 var matched = enrollments.SingleOrDefault(x => x.Id == enrollment.Id);
                 if (matched != null)

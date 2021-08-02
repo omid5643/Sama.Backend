@@ -66,7 +66,7 @@ namespace Omran.Sama.Services
 
         {
             List<Schedule> schedules = Load();
-            if(schedules!=null)
+            if(schedules != null && schedules.Count() > 0 )
             {
                 var matched = schedules.SingleOrDefault(x=>x.Id==schedule.Id);
                 if (matched != null)

@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace Omran.Sama.Models
 {
     public class Payment:Entity
-    {
-        public int EntityId { get; set;}
-        public int Amount { get;set;}
-        public DateTime CreatDate { get; set;}
-        public string CreatedBy { get;set;}
+    { public int ForgenId { get; set; }
+        public int Amount { get; set;}
+        public DateTime CreatDate {get; set;}
+        public string CreatedBy {get;set;}
     }
 }

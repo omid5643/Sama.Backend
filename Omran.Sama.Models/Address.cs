@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace Omran.Sama.Models
 {
      public class Address
-    {   public string Addr1 { get; set; }
-        public string Addr2 { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string Zip { get; set; }
+    {   public string Addr1 {get; set;}
+        public string Addr2 {get; set;}
+        public string City {get; set;}
+        public string State {get; set;}
+        public string Zip {get; set;}
     }
 }

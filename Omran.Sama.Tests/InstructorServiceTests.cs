@@ -19,23 +19,23 @@ namespace Omran.Sama.Tests
         public void TestAdd()
         {
             Instructor instructor = new Instructor();
-            instructor.Id = 2;
+            instructor.Id =1;
             instructor.FirstName = "Walter";
             instructor.LastName = "white";
+            instructor.PhoneNumber = new string[] {"999" };
             instructorService.Add(instructor);
         }
         public void TestUpdate()
         {
             Instructor instructor = new Instructor();
-            instructor.Id = 10;
-            instructor.Age = 32;
+            instructor.Id = 2;
             instructorService.Update(instructor);
         }
     
         public void TestGetInstructorsNameByName()
         {
 
-            List<Instructor> mathedInstructors = instructorService.GetByName("walter4", " white4");
+            List<Instructor> mathedInstructors = instructorService.GetByName("Omid","Abaei");
         }
         public void TestRemove()
         {

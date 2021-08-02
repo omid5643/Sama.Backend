@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Services
 {
-    public class BankService
+    public class BankService:IBank
     {
         private readonly string fullPath = DbConstants.DbPath + DbConstants.BankFile;
 
@@ -60,7 +60,7 @@ namespace Omran.Sama.Services
         public bool Add(Bank bank)
         {
             List<Bank> banks = Load();
-            if (banks != null)
+            if (banks != null && banks.Count()>0)
             {
 
                 var matched = banks.SingleOrDefault(x => x.Id == bank.Id);

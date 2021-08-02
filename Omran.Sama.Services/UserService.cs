@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
+using Omran.Sama.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Services
 {
-   public class UserService
+    public class UserService : IUserService
     {
         private readonly string fullPath = DbConstants.DbPath + DbConstants.UserFile;
         public List<User> Load()
@@ -23,7 +24,7 @@ namespace Omran.Sama.Services
             }
             return null;
         }
-          private bool Store(List<User> users)
+        private bool Store(List<User> users)
         {
             try
             {
@@ -38,8 +39,8 @@ namespace Omran.Sama.Services
             }
 
         }
-        
-        public  User LoadById(int id)
+
+        public User LoadById(int id)
         {
             try
             {
@@ -53,47 +54,49 @@ namespace Omran.Sama.Services
                 Loger.Log(e.Message);
                 return null;
             }
-       }
+        }
 
-       public bool Add(User user)
+        public bool Add(User user)
 
-        {   List<User> users = Load();
-            if (users != null)
+        {
+            List<User> users = Load();
+            if (users != null && users.Count() > 0 )
             {
                 var matched = users.SingleOrDefault(x => x.Id == user.Id);
                 if (matched != null)
                     return false;
-            
-            int greatestId = users.OrderByDescending(x => x.Id).Select(x => x.Id).First();
-            user.Id = greatestId + 1;
-            user.CreateBy = "System";
-            user.CreateDate = System.DateTime.Now;
 
-            users.Add(user);
-             Store(users);
-            return true; }
+                int greatestId = users.OrderByDescending(x => x.Id).Select(x => x.Id).First();
+                user.Id = greatestId + 1;
+                user.CreateBy = "System";
+                user.CreateDate = System.DateTime.Now;
+
+                users.Add(user);
+                Store(users);
+                return true;
+            }
             else
             {
                 List<User> newusers = new List<User>();
-                user.Id= 1;
+                user.Id = 1;
                 user.CreateBy = "System";
                 user.CreateDate = System.DateTime.Now;
                 newusers.Add(user);
-               Store(newusers);
+                Store(newusers);
                 return true;
 
             }
-       }
-               
-       public List<User> GetByName(string firstName, string lastName)
-       {
+        }
+
+        public List<User> GetByName(string firstName, string lastName)
+        {
             List<User> users = Load();
             var matched = users.Where(x => x.FirstName != null && x.LastName != null &&
-                                      x.FirstName.ToLower().Trim() == firstName.ToLower().Trim()&&
+                                      x.FirstName.ToLower().Trim() == firstName.ToLower().Trim() &&
                                       x.LastName.ToLower().Trim() == lastName.ToLower().Trim()).ToList();
             return matched;
-       }
-       public bool Remove(int id)
+        }
+        public bool Remove(int id)
         {
             try
             {
@@ -102,7 +105,7 @@ namespace Omran.Sama.Services
                 return true;
             }
 
-            catch(Exception e)
+            catch (Exception e)
             {
                 Loger.Log(e.Message);
                 return false;
@@ -130,7 +133,9 @@ namespace Omran.Sama.Services
             }
 
         }
-
-
     }
 }
+
+    
+
+  

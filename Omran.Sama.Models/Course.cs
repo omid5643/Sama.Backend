@@ -10,12 +10,11 @@ namespace Omran.Sama.Models
    public class Course:Entity
     {
       
-        public string Name { get; set;}
-        public int Credit { get; set;}
-        public DateTime CreatDate { get; set;}
-        public string CreatedBy { get; set;}
-        public int? PreReqId { get; set;}
-        public decimal Cost { get; set;}
-     
+        public string Name {get; set;}
+        public int Credit {get; set;}
+        public int? PreReqId {get; set;}
+        public decimal Cost {get; set;}
+        public DateTime CreatDate {get; set; }
+        public string CreatedBy {get; set;}
     }
 }

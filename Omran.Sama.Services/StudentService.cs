@@ -61,7 +61,7 @@ namespace Omran.Sama.Services
         public bool Add(Student student)
         {
             List<Student> students = Load();
-            if (students != null)
+            if (students != null && students.Count()>0)
             {
                 var matched = students.SingleOrDefault(x => x.Id== student.Id);
                 if (matched != null)
@@ -144,7 +144,11 @@ namespace Omran.Sama.Services
                 foundStudent.LastName = student.LastName;
                 foundStudent.Age = student.Age;
                 foundStudent.PhoneNumbers = student.PhoneNumbers;
-                foundStudent.Address = student.Address;
+                foundStudent.Address.Addr1 = student.Address.Addr1;
+                foundStudent.Address.State = student.Address.State;
+                foundStudent.Address.City = student.Address.City;
+                foundStudent.Address.Zip = student.Address.Zip;
+                foundStudent.Email = student.Email;
                 foundStudent.CreateDate = student.CreateDate;
                 foundStudent.CreateBy = student.CreateBy;
                 Store(students);
@@ -157,6 +161,7 @@ namespace Omran.Sama.Services
                 return false;
             }
         }
+      
       
         
          

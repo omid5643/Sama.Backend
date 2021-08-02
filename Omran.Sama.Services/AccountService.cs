@@ -59,7 +59,7 @@ namespace Omran.Sama.Services
         public bool Add(Account account)
         {
             List<Account> accounts = Load();
-            if (accounts != null)
+            if (accounts != null && accounts.Count()>0)
             {
                 var matched = accounts.SingleOrDefault(x => x.Id == account.Id);
                 if (matched != null)

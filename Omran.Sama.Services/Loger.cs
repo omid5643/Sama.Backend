@@ -12,7 +12,7 @@ namespace Omran.Sama.Services
         public static string fullpath = @"C:\OmranLog\" + "Log.txt";
         public static void Log(string message)
         {
-            message = DateTime.Now + message + Environment.NewLine;
+            message = DateTime.Now+ message + Environment.NewLine;
             File.AppendAllText(fullpath, message);
         }
     }

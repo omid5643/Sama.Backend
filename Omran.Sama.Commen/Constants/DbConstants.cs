@@ -20,6 +20,7 @@ namespace Omran.Sama.Commen.Constants
         public const string BankFile = "Bank.json";
         public const string LogerFile = "Log.txt";
         public const string ScheduleFile = "Schedule.json";
+        public const string EmployeeFile = "Employees.json";
 
 
     }

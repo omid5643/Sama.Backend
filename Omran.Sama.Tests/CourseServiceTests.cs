@@ -26,7 +26,7 @@ namespace Omran.Sama.Tests
         }
         public void TestUpdate()
         {
-            Course course = new Course { Id = 4, Name = "math2", Credit = 3, PreReqId = 3 };
+            Course course = new Course { Id = 1, Name = "math2", Credit = 3, PreReqId = 3 };
             bool succeded = courseService.Update(course);
         }
         public void TestAdd()
