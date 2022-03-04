@@ -1,12 +1,9 @@
-﻿using omran.sama.tests;
-using Omran.Sama.Models;
-using Omran.Sama.Services;
+﻿using Omran.Sama.Models;
 using Omran.Sama.Tests.GenericExample;
-using System.Collections.Generic;
 
 namespace Omran.Sama.Tests
 {
-    class Program
+   class Program
     {
         static string[] Revers(string[] names)
         {

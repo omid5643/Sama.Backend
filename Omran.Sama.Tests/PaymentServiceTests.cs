@@ -1,14 +1,16 @@
 ﻿using Omran.Sama.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace omran.sama.tests
+namespace Omran.Sama.Tests
 {
     public class PaymentServiceTests
     {
 
-        PaymentService _paymentservice = new PaymentService();
-
-
- 
+        PaymentService _paymentService = new PaymentService();
 
 
     }
