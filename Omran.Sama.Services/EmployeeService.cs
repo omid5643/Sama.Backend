@@ -51,6 +51,29 @@ namespace Omran.Sama.Services
             }
         }
 
+        public Employee LoadById(int id)
+        {
+            try
+            {
+
+                List<Employee> employees = Load();
+                var foundemployee = employees.SingleOrDefault(x => x.Id == id);
+
+                return foundemployee;
+            }
+            catch (Exception e)
+            {
+
+                Loger.Log(e.Message);
+
+                return null;
+
+            }
+
+        }
+
+
+
 
 
         public bool Add(Employee employee)
@@ -88,9 +111,78 @@ namespace Omran.Sama.Services
 
             
         }
+        public  List<Employee> GetEmployeeByName(string firstName,string lastName)
+        {
+
+            List<Employee> employees = Load();
+            if (employees != null)
+            {
+               var matched =employees.Where(x =>  x.FirstName!=null&& 
+                                                  x.LastName!=null&&
+                                                  x.FirstName.ToLower().Trim()==firstName.ToLower().Trim()&&
+                                                  x.LastName.ToLower().Trim()==lastName.ToLower().Trim()).ToList();
+
+                return matched;
+            }
+
+            return null;
+        }
+        public bool Remove(int id)
+        {
+            try
+            {
+                List<Employee> employees = Load();
+                var matched = employees.Single(x => x.Id == id);
+                employees.Remove(matched);
+                Store(employees);
+
+                return true;
+            }
+
+
+            catch(Exception e)
+            {
+
+                Loger.Log(e.Message);
+                return false;
+
+            }
+
+        }
+        public bool Update(Employee employee)
+        {
+            try
+            {
+                List<Employee> employees = Load();
+                var employeeToUpdate = employees.Single(x => x.Id == employee.Id);
+                 employeeToUpdate.Id =employee.Id;
+                 employeeToUpdate.FirstName = employee.FirstName;
+                 employeeToUpdate.LastName = employee.LastName;
+                 employeeToUpdate.Age = employee.Age;
+                 employeeToUpdate.UserId = employee.UserId;
+                 employeeToUpdate.Email = employee.Email;
+                 employeeToUpdate.PhoneNumbers = employee.PhoneNumbers;
+                 employeeToUpdate.Address = employee.Address;
+                 employeeToUpdate.CreateDate = employee.CreateDate;
+                 employeeToUpdate.CreateBy = employee.CreateBy;
+                Store(employees);
+                
 
 
 
+                return true;
+            }
+            catch (Exception e)
+            {
+                Loger.Log(e.Message);
+
+                return false;
+            }
+
+
+
+        }
+       
       
 
 
