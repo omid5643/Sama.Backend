@@ -18,6 +18,7 @@ namespace Omran.Sama.Commen.Constants
         public const string PaymentRout = "api/Payment";
         public const string BankRout = "api/Bank";
         public const string ScheduleRout = "api/Schedule";
+        public const string EmployeeRout = "api/Employee";
       
     }
 }

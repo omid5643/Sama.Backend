@@ -18,10 +18,11 @@ namespace Omran.Sama.Server.Controllers
 
         public StudentController()
         {
+           
         }
 
 
-        [HttpGet("[action]")]
+        [HttpGet("[Action]")]
        
        public List<Student> Load()
         {
