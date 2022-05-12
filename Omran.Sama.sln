@@ -11,13 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Tests", "Omran.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omran.Sama.Server", "Omran.Sama.Server\Omran.Sama.Server.csproj", "{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Data", "Omran.Sama.Data\Omran.Sama.Data.csproj", "{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.Common", "Omran.Sama.Commen\Omran.Sama.Common.csproj", "{58B5564D-219C-4BCF-B4DE-B6D7D025287B}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{25706F08-177D-4715-8B96-09A62787EAE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omran.Sama.UniTests", "..\Omran.Sama.UniTests\Omran.Sama.UniTests.csproj", "{336EE52E-7A0B-491D-B0DF-B4B53B5D2B68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omran.Sama.UniTests", "..\Omran.Sama.UniTests\Omran.Sama.UniTests.csproj", "{336EE52E-7A0B-491D-B0DF-B4B53B5D2B68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90FD478B-5FCA-436A-B74A-6E0D1C75DE25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA5EEB11-01AF-49B5-9C62-1EE0CAC457ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58B5564D-219C-4BCF-B4DE-B6D7D025287B}.Release|Any CPU.ActiveCfg = Release|Any CPU
