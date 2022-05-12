@@ -24,7 +24,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Log(e.Message);
             }
             return false;
         }

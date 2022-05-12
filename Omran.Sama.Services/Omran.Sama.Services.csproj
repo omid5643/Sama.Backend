@@ -58,7 +58,6 @@
     <Compile Include="InstructorService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Interfaces\IRollService.cs" />
-    <Compile Include="Loger.cs" />
     <Compile Include="PaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RollService.cs" />

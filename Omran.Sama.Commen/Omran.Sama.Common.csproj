@@ -44,6 +44,7 @@
     <Compile Include="Constants\RouteConstants.cs" />
     <Compile Include="Enums\EmployeeType.cs" />
     <Compile Include="Enums\WeekDays.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Properties\DTOs\CourseDTO.cs" />
     <Compile Include="Properties\DTOs\EnollmentDTO.cs" />
     <Compile Include="Properties\DTOs\InstructorDTO.cs" />

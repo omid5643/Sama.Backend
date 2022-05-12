@@ -5,18 +5,21 @@ using Omran.Sama.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace Omran.Sama.Database
 {
-    public class StudentDbProvider
+   public class InstructorDbProvider
     {
-        private readonly string fullPath = DbConstants.DbPath + DbConstants.StudentFile;
-        public bool Store(List<Student> students)
+
+        private readonly string fullPath = DbConstants.DbPath + DbConstants.InstrucrtorFile;
+
+        private bool Store(List<Instructor> instructors)
         {
             try
             {
 
-                string serialized = JsonConvert.SerializeObject(students);
+                string serialized = JsonConvert.SerializeObject(instructors);
                 File.WriteAllText(this.fullPath, serialized);
                 return true;
             }
@@ -28,16 +31,14 @@ namespace Omran.Sama.Database
 
             }
         }
-
-        public List<Student> Load()
+        public List<Instructor> Load()
         {
-            if (File.Exists(this.fullPath))
+            if (File.Exists(fullPath))
             {
+                string content = File.ReadAllText(fullPath);
+                List<Instructor> instructors = JsonConvert.DeserializeObject<List<Instructor>>(content);
+                return instructors;
 
-                string content = File.ReadAllText(this.fullPath);
-                List<Student> students = JsonConvert.DeserializeObject<List<Student>>(content);
-
-                return students;
             }
             return null;
         }
