@@ -57,9 +57,9 @@ namespace Omran.Sama.Services
             {
 
                 List<Employee> employees = Load();
-                var foundemployee = employees.SingleOrDefault(x => x.Id == id);
+                var foundEmployee = employees.Single(x => x.Id == id);
 
-                return foundemployee;
+                return foundEmployee;
             }
             catch (Exception e)
             {
@@ -97,7 +97,7 @@ namespace Omran.Sama.Services
             else{
 
                 List<Employee> newEmployees = new List<Employee>();
-                employee.Id = 1;
+                employee.Id=1;
                 employee.CreateDate = System.DateTime.Now;
                 employee.CreateBy = "System";
                 newEmployees.Add(employee);

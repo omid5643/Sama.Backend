@@ -22,22 +22,26 @@ namespace Omran.Sama.Server.Controllers
 
         public List<Employee> Load()
         {
-            var employees = _service.Load();
-            return Load();
+          return _service.Load();
+        
 
         }
         [HttpPost("[Action]")]
-        public Employee LoadById( int id)
+        public Employee LoadById(int id)
         {
             return _service.LoadById(id);
-           
+
         }
+
+
         [HttpPost("[Action]")]
-        public bool Add([FromBody] Employee employee)
+        public bool Add([FromBody]Employee employee)
         {
 
           return _service.Add(employee);
         }
+
+
 
         [HttpPost("[Action]")]
         public  List<Employee> GetEmployeeByname([FromBody] Employee employee)

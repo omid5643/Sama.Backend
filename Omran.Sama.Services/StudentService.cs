@@ -144,10 +144,7 @@ namespace Omran.Sama.Services
                 foundStudent.LastName = student.LastName;
                 foundStudent.Age = student.Age;
                 foundStudent.PhoneNumbers = student.PhoneNumbers;
-                foundStudent.Address.Addr1 = student.Address.Addr1;
-                foundStudent.Address.State = student.Address.State;
-                foundStudent.Address.City = student.Address.City;
-                foundStudent.Address.Zip = student.Address.Zip;
+                foundStudent.Address= student.Address;
                 foundStudent.Email = student.Email;
                 foundStudent.CreateDate = student.CreateDate;
                 foundStudent.CreateBy = student.CreateBy;

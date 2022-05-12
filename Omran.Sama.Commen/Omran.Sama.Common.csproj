@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Constants\DbConstants.cs" />
     <Compile Include="Constants\RouteConstants.cs" />
+    <Compile Include="Enums\EmployeeType.cs" />
     <Compile Include="Enums\WeekDays.cs" />
     <Compile Include="Properties\DTOs\CourseDTO.cs" />
     <Compile Include="Properties\DTOs\EnollmentDTO.cs" />

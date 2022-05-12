@@ -125,12 +125,17 @@ namespace Omran.Sama.Tests
             _service.TestUpdate();
             #endregion
 
-        
-
+            #region EmployeeServiceTests
+            EmployeeServiceTests employeeServiceTests = new EmployeeServiceTests();
+            employeeServiceTests.TestLoad();
+            employeeServiceTests.TestAdd();
+            employeeServiceTests.TestRemove();
+            employeeServiceTests.TestUpdate();
+            #endregion
         }
 
 
 
-        
+
     }
 }

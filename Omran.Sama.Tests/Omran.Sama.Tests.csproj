@@ -49,6 +49,7 @@
     <Compile Include="AccountServiceTests.cs" />
     <Compile Include="BankServiceTests.cs" />
     <Compile Include="CourseServiceTests.cs" />
+    <Compile Include="EmployeeServiceTests.cs" />
     <Compile Include="EnrollmentServiceTests.cs" />
     <Compile Include="GenericExample\Serializer.cs" />
     <Compile Include="InstructorServiceTests.cs" />
