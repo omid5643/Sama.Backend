@@ -51,6 +51,7 @@
     <Compile Include="CourseServiceTests.cs" />
     <Compile Include="EmployeeServiceTests.cs" />
     <Compile Include="EnrollmentServiceTests.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="GenericExample\Serializer.cs" />
     <Compile Include="InstructorServiceTests.cs" />
     <Compile Include="PaymentServiceTests.cs" />

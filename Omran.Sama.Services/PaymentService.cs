@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 using System;
@@ -37,7 +38,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }
@@ -64,7 +65,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
@@ -81,7 +82,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
 
@@ -129,7 +130,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
             }
             return false;
 

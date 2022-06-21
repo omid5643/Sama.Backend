@@ -13,5 +13,6 @@ namespace Omran.Sama.Models
         public DateTime CreateDate {get; set;}
         public string CreateBy {get; set;}
 
+       
     }
 }
