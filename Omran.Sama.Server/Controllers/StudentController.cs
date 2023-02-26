@@ -30,6 +30,7 @@ namespace Omran.Sama.Server.Controllers
             return students;
         }
 
+
         [HttpPost("[Action]")]
 
         public  Student LoadById(int id)
