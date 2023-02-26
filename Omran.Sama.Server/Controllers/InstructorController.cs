@@ -48,6 +48,12 @@ namespace Omran.Sama.Server.Controllers
             return _service.Remove(id);
         }
         [HttpPost("[Action]")]
+        public void RemoveMany(List<int>ids)
+        {
+
+            _service.RemoveMany(ids);
+        }
+        [HttpPost("[Action]")]
         public bool Update( [FromBody]Instructor instructor)
         {
             return _service.Update(instructor);

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Commen.Enums;
 using Omran.Sama.Common;
@@ -32,7 +33,7 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
             }
@@ -59,7 +60,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
@@ -67,7 +68,7 @@ namespace Omran.Sama.Services
         {
 
             List<Enrollment> enrollments = Load();
-            if (enrollments != null)
+            if (enrollments != null && enrollments.Count() > 0)
             {
                 var matched = enrollments.SingleOrDefault(x => x.Id == enrollment.Id);
                 if (matched != null)
@@ -107,7 +108,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
             }
@@ -133,7 +134,7 @@ namespace Omran.Sama.Services
             catch (Exception e)
             {
 
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 using System;
@@ -25,7 +26,7 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
             }
@@ -53,7 +54,7 @@ namespace Omran.Sama.Services
             }
             catch(Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
@@ -61,7 +62,7 @@ namespace Omran.Sama.Services
         public bool Add(Student student)
         {
             List<Student> students = Load();
-            if (students != null)
+            if (students != null && students.Count()>0)
             {
                 var matched = students.SingleOrDefault(x => x.Id== student.Id);
                 if (matched != null)
@@ -116,7 +117,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                // throw;
                return false;
             }
@@ -144,7 +145,8 @@ namespace Omran.Sama.Services
                 foundStudent.LastName = student.LastName;
                 foundStudent.Age = student.Age;
                 foundStudent.PhoneNumbers = student.PhoneNumbers;
-                foundStudent.Address = student.Address;
+                foundStudent.Address= student.Address;
+                foundStudent.Email = student.Email;
                 foundStudent.CreateDate = student.CreateDate;
                 foundStudent.CreateBy = student.CreateBy;
                 Store(students);
@@ -153,10 +155,11 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
-            }
+        }
+      
       
         
          

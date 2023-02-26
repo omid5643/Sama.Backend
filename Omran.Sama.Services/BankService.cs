@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Services
 {
-    public class BankService
+    public class BankService:IBank
     {
         private readonly string fullPath = DbConstants.DbPath + DbConstants.BankFile;
 
@@ -24,7 +25,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
             }
             return false;
         }
@@ -51,7 +52,7 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
 
@@ -60,7 +61,7 @@ namespace Omran.Sama.Services
         public bool Add(Bank bank)
         {
             List<Bank> banks = Load();
-            if (banks != null)
+            if (banks != null && banks.Count()>0)
             {
 
                 var matched = banks.SingleOrDefault(x => x.Id == bank.Id);
@@ -103,7 +104,7 @@ namespace Omran.Sama.Services
             catch (Exception e)
             {
 
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
 
@@ -128,7 +129,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }

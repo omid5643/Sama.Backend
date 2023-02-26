@@ -8,8 +8,8 @@ namespace Omran.Sama.Models
 {
     public class Room:Entity
     { 
-       public int RoomNumber { get; set; }
-       public string Name { get; set; }
+       public int RoomNumber {get; set;}
+       public string Name {get; set;}
 
     }
 }

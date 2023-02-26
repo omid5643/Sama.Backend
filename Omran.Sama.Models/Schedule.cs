@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Models
 {
-    public class Schedule : Entity
+    public class Schedule:Entity
     {
 
-        public TimeSpan StartTime { get; set; }
-        public TimeSpan EndTime { get; set; }
-        public WeekDays[] Day { get; set; }
-
+        public TimeSpan StartTime {get; set;}
+        public TimeSpan EndTime {get; set;}
+        public WeekDays[] Day {get; set;}
+        public DateTime CreatDate  {get; set;} 
+        public string CreatedBy {get; set;}
 
 
     }

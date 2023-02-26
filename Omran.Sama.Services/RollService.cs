@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
+using Omran.Sama.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Services
 {
-    public class RollService
+    public class RollService:IRollService
     {
         private readonly string fullPath = DbConstants.DbPath + DbConstants.RollFile;
         public List<Roll> Load()
@@ -33,7 +35,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
 
@@ -50,7 +52,7 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
@@ -59,7 +61,7 @@ namespace Omran.Sama.Services
 
         {
             List<Roll> rolls = Load();
-            if (rolls != null)
+            if (rolls != null && rolls.Count() > 0 )
             {
                 var matched = rolls.SingleOrDefault(x => x.Id == roll.Id);
                 if (matched != null)
@@ -97,7 +99,7 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
 
@@ -119,7 +121,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
 
                 return false;
             }

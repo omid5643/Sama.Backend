@@ -46,13 +46,18 @@
     <Compile Include="AccountService.cs" />
     <Compile Include="BankService.cs" />
     <Compile Include="CourseService.cs" />
+    <Compile Include="EmployeeService.cs" />
     <Compile Include="EnrollmentService.cs" />
-    <Compile Include="IEnrollmentService.cs" />
-    <Compile Include="IInstructorService.cs" />
-    <Compile Include="ICourseService.cs" />
+    <Compile Include="Interfaces\IBank.cs" />
+    <Compile Include="Interfaces\IAccountService.cs" />
+    <Compile Include="Interfaces\ICourseService.cs" />
+    <Compile Include="Interfaces\IEnrollmentService.cs" />
+    <Compile Include="Interfaces\IInstructorService.cs" />
+    <Compile Include="Interfaces\IScheduleService.cs" />
+    <Compile Include="Interfaces\IStudentService.cs" />
     <Compile Include="InstructorService.cs" />
-    <Compile Include="IStudentService.cs" />
-    <Compile Include="Loger.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
+    <Compile Include="Interfaces\IRollService.cs" />
     <Compile Include="PaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RollService.cs" />
@@ -72,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

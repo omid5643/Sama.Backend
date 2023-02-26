@@ -18,14 +18,16 @@ namespace Omran.Sama.Server.Controllers
 
         public StudentController()
         {
+           
         }
 
 
-        [HttpGet("[action]")]
+        [HttpGet("[Action]")]
        
        public List<Student> Load()
         {
-            return _service.Load();
+           var students= _service.Load();
+            return students;
         }
 
         [HttpPost("[Action]")]
@@ -53,6 +55,13 @@ namespace Omran.Sama.Server.Controllers
         public bool Remove(int id)
         {
             return _service.Remove(id);
+
+        }
+        [HttpPost("[Action]")]
+        public void RemoveMany(List<int> ids)
+        {
+
+            _service.RemoveMany( ids);
         }
         [HttpPost("[Action]")] 
 

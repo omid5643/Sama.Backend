@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc.Core;
+using Newtonsoft.Json.Serialization;
 
 namespace Omran.Sama.Server
 {
@@ -25,7 +26,13 @@ namespace Omran.Sama.Server
             .AllowAnyHeader()
             .AllowCredentials()
             ));
-           services.AddMvc();
+           services.AddMvc()
+                .AddJsonOptions(options =>
+                {
+                    // don't serialize with CamelCase (see https://github.com/aspnet/Announcements/issues/194)
+                    options.SerializerSettings.ContractResolver
+                    = new DefaultContractResolver();
+                });
 
         }
 

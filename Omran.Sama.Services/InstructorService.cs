@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 
@@ -27,7 +28,7 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
             }
@@ -54,14 +55,14 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
         public bool Add(Instructor instructor)
         {
             List<Instructor> instructors = Load();
-            if (instructors != null)
+            if (instructors != null && instructors.Count()>0)
             {
                 var matched = instructors.SingleOrDefault(x => x.Id == instructor.Id);
                 if (matched != null)
@@ -117,9 +118,24 @@ namespace Omran.Sama.Services
             }
             catch(Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
+        }
+
+        public void RemoveMany(List<int> ids)
+        {
+            {
+                List<Instructor> instructors = Load();
+                var instructorsToRemove = instructors.Where(x => ids.Contains(x.Id)).ToList();
+                if (instructorsToRemove != null && instructorsToRemove.Count() > 0)
+                {
+                    instructors.RemoveAll(x => instructorsToRemove.Select(y => y.Id).Contains(x.Id));
+                }
+                Store(instructors);
+
+            }
+
         }
 
         public bool Update(Instructor instructor)
@@ -131,9 +147,9 @@ namespace Omran.Sama.Services
                 instructorToUpdate.Id = instructor.Id;
                 instructorToUpdate.FirstName = instructor.FirstName;
                 instructorToUpdate.LastName = instructor.LastName;
-                instructorToUpdate.Age = instructor.Age;
                 instructorToUpdate.PhoneNumber = instructor.PhoneNumber;
                 instructorToUpdate.Address = instructor.Address;
+                instructorToUpdate.Email = instructor.Email;
                 instructorToUpdate.CreateBy = instructor.CreateBy;
                 instructorToUpdate.CreateDate = instructor.CreateDate;
                 Store(instructors);
@@ -141,7 +157,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
                 

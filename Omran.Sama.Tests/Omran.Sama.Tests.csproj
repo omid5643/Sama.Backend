@@ -49,13 +49,16 @@
     <Compile Include="AccountServiceTests.cs" />
     <Compile Include="BankServiceTests.cs" />
     <Compile Include="CourseServiceTests.cs" />
+    <Compile Include="EmployeeServiceTests.cs" />
     <Compile Include="EnrollmentServiceTests.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="GenericExample\Serializer.cs" />
     <Compile Include="InstructorServiceTests.cs" />
     <Compile Include="PaymentServiceTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RollServiceTests.cs" />
+    <Compile Include="ScheduleServiceTests.cs" />
     <Compile Include="StudentServiceTests.cs" />
     <Compile Include="UserServiceTests.cs" />
   </ItemGroup>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 
@@ -24,7 +25,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }
@@ -53,17 +54,17 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
         public bool Add(Course course)
         {
             List<Course> courses = Load();
-            if (courses != null)
+            if (courses!= null && courses.Count()>0)
             {
-                var matched = courses.SingleOrDefault(x => x.Id == course.Id);
-                if (matched != null)
+                var matched =courses.SingleOrDefault(x =>x.Id == course.Id);
+                if (matched!= null)
                     return false;
                 //Find Greatest Id In DB
                 int greatestId = courses.OrderByDescending(x => x.Id).Select(x => x.Id).First();
@@ -111,7 +112,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
             }
@@ -141,6 +142,7 @@ namespace Omran.Sama.Services
                 updatecourse.Id = course.Id;
                 updatecourse.Name = course.Name;
                 updatecourse.PreReqId = course.PreReqId;
+                updatecourse.Cost=course.Cost;
                 updatecourse.Credit = course.Credit;
                 updatecourse.CreatDate = course.CreatDate;
                 updatecourse.CreatedBy = course.CreatedBy;
@@ -149,7 +151,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
            }

@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="Constants\DbConstants.cs" />
     <Compile Include="Constants\RouteConstants.cs" />
+    <Compile Include="Enums\EmployeeType.cs" />
     <Compile Include="Enums\WeekDays.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Properties\DTOs\CourseDTO.cs" />
     <Compile Include="Properties\DTOs\EnollmentDTO.cs" />
     <Compile Include="Properties\DTOs\InstructorDTO.cs" />
@@ -51,7 +53,7 @@
     <Compile Include="Enums\Roll.cs" />
     <Compile Include="Enums\Grade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Semester.cs" />
+    <Compile Include="Enums\Semester.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

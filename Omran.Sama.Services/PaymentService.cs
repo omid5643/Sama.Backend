@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 using System;
@@ -12,7 +13,7 @@ namespace Omran.Sama.Services
 {
     public class PaymentService : IDisposable
     {
-       
+
         private readonly string fullPath = DbConstants.DbPath + DbConstants.PaymentFile;
         private StudentService studentService = new StudentService();
         private AccountService accountService = new AccountService();
@@ -37,7 +38,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }
@@ -59,12 +60,12 @@ namespace Omran.Sama.Services
             try
             {
                 List<Payment> payments = Load();
-                var matched = payments.Single(x => x.Id ==id);
+                var matched = payments.Single(x => x.Id == id);
                 return matched;
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
         }
@@ -81,7 +82,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
 
@@ -91,10 +92,10 @@ namespace Omran.Sama.Services
             List<Payment> payments = Load();
             if (payments != null)
             {
-                var matched = payments.SingleOrDefault(x =>x.Id ==payment.Id);
+                var matched = payments.SingleOrDefault(x => x.Id == payment.Id);
                 if (matched != null)
                     return false;
-                int greatestId = payments.OrderByDescending(x =>x.Id).Select(x =>x.Id).FirstOrDefault();
+                int greatestId = payments.OrderByDescending(x => x.Id).Select(x => x.Id).FirstOrDefault();
                 payment.Id = greatestId + 1;
                 payment.CreatedBy = "System";
                 payment.CreatDate = System.DateTime.Now;
@@ -120,102 +121,69 @@ namespace Omran.Sama.Services
             try
             {
                 List<Payment> payments = Load();
-                var foundPaymentToUpdate = payments.Single(x => x.Id == payment.Id);
-                foundPaymentToUpdate.EntityId = payment.EntityId;
-                foundPaymentToUpdate.Amount = payment.EntityId;
+                var foundPaymentToUpdate = payments.Single(x => x.ForgenId == payment.Id);
+                foundPaymentToUpdate.ForgenId = payment.Id;
+                foundPaymentToUpdate.Amount = payment.Id;
                 foundPaymentToUpdate.CreatedBy = payment.CreatedBy;
                 foundPaymentToUpdate.CreatDate = payment.CreatDate;
                 return true;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
             }
             return false;
 
         }
-        public Payment Submit(int amount, int studentId)
-        {
-            Payment payment = new Payment();
-            List<Account> accounts= accountService.Load();
-            var foundAccount = accounts.Single(x=>x.ForeignId==studentId);
-            foundAccount.Balance = foundAccount.Balance - amount;
-            payment.Amount =amount;
-            payment.EntityId = studentId;
-            Add(payment);
-         
-            return payment;
-        }
+        //public int GetSumOfPayments()
+        //{
+        //    List<Payment> payments = Load();
+        //    //int sum=0;
 
-        public int GetSumOfPayments()
-        {
-            List<Payment> payments = Load();
-            //int sum=0;
+        //    //foreach (Payment payment in payments)
+        //    //{
+        //    //    sum =  sum+ payment.Amount;
 
-            //foreach (Payment payment in payments)
-            //{
-            //    sum =  sum+ payment.Amount;
+        //    //}
 
-            //}
+        //    //return sum;
+        //    return payments.Sum(x => x.Amount);
+        //}
 
-            //return sum;
-            return payments.Sum(x => x.Amount);
-        }
-
-        public int  GetSumOfPaymentsForStudent(int studentId)
-        {
-            int sum = 0;
-         
-            List<Payment> payments = Load();
-            //foreach (Payment payment in payments)
-            //{
-            //    if (payment.EntityId==studentId)
-            //    {
-            //        sum = sum + payment.Amount;
-            //    }
-            //}
-
-            var studntPayments = payments.Where(x => x.EntityId == studentId);
-            sum = studntPayments.Sum(x => x.Amount);
-            
-
-            return sum; 
-        }
-        public int GetSumOfPaymentsForStudent_omid(int studentId)=> Load()
-                                                                   .Where(x => x.EntityId == studentId)
-                                                                  .Sum(x => x.Amount);
-
-        public Dictionary<int, int> GetStudentPaymentReport()
-        {
-            Dictionary<int, int> reportList = new Dictionary<int, int>();
-            var students = studentService.Load();
-            var payments = Load();
-            foreach (Student student in students)
-            {
-                var count = payments.Count(x => x.EntityId == student.Id);
-               reportList.Add(student.Id, count);
-            }
+        //        {
+        //            Dictionary<int, int> reportList = new Dictionary<int, int>();
+        //    var students = studentService.Load();
+        //    var payments = Load();
+        //            foreach (Student student in students)
+        //            {
+        //                var count = payments.Count(x => x.Id == student.Id);
+        //    reportList.Add(student.Id, count);
+        //            }
 
 
 
 
-            return reportList;
-        }
-        
-
-
+        //return reportList;
+        //        }
 
         public void Dispose()
         {
-            //manage freeing of unmanaged memory
-           // _mySQLConnection.Close();
-
+            throw new NotImplementedException();
         }
-
 
     }
 
+    
+
+
+
+
+   
+
+
 }
+
+
 
 
 

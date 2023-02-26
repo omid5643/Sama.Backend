@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Omran.Sama.Commen;
 using Omran.Sama.Commen.Constants;
 using Omran.Sama.Models;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Omran.Sama.Services
 {
-    public class AccountService
+    public class AccountService:IAccountService
     {
         private readonly string fullPath = DbConstants.DbPath + DbConstants.AccountFile;
         private StudentService studentService = new StudentService();
@@ -24,7 +25,7 @@ namespace Omran.Sama.Services
             }
             return null;
         }
-           private bool Store(List<Account> accounts)
+        private bool Store(List<Account> accounts)
         {
             try
             {
@@ -36,12 +37,12 @@ namespace Omran.Sama.Services
 
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
 
             }
         }
-          public Account LoadById(int id)
+        public Account LoadById(int id)
         {
             try
             {
@@ -51,7 +52,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
 
@@ -59,12 +60,12 @@ namespace Omran.Sama.Services
         public bool Add(Account account)
         {
             List<Account> accounts = Load();
-            if (accounts != null)
+            if (accounts != null && accounts.Count()>0)
             {
                 var matched = accounts.SingleOrDefault(x => x.Id == account.Id);
                 if (matched != null)
                     return false;
-                int greatestId = accounts.OrderByDescending(x => x).Select(x => x.Id).FirstOrDefault();
+                int greatestId = accounts.OrderByDescending(x => x.Id).Select(x => x.Id).First();
                 account.Id = greatestId + 1;
                 account.CreateBy = "System";
                 account.CreateDate = System.DateTime.Now;
@@ -101,7 +102,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }
@@ -117,7 +118,7 @@ namespace Omran.Sama.Services
             }
             catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return false;
             }
         }
@@ -125,49 +126,49 @@ namespace Omran.Sama.Services
         public void CreatStudentAccounts()
         {
             //all=new+existing
-            List<Account> existingAccounts = Load();   
+            List<Account> existingAccounts = Load();
             List<Student> students = studentService.Load();
             List<Account> newAccounts = new List<Account>();
             List<Account> allAccounts = new List<Account>();
             int id = 1;
             foreach (Student student in students)
             {
-                
+
                 if (existingAccounts == null)
+                {
+                    //create an account for the student and add it to the list
+                    Account account = new Account();
+                    account.Id = id;
+                    account.ForeignId = student.Id;
+                    account.Number = "000" + student.Id;
+                    newAccounts.Add(account);
+                    id++;
+                }
+                else
+                {
+                    var found = existingAccounts.SingleOrDefault(x => x.ForeignId == student.Id);
+                    //if not found
+                    if (found == null)
                     {
                         //create an account for the student and add it to the list
                         Account account = new Account();
-                        account.Id = id;
-                        account.ForeignId = student.Id;
-                       account.Number = "000"+student.Id;
-                       newAccounts.Add(account);
-                       id++;
-                    }
-                    else
-                    {
-                        var found = existingAccounts.SingleOrDefault(x => x.ForeignId == student.Id);
-                        //if not found
-                        if (found == null)
-                        {
-                            //create an account for the student and add it to the list
-                            Account account = new Account();
-                        int greatestId =existingAccounts.OrderByDescending(x => x).Select(x => x.Id).FirstOrDefault();
+                        int greatestId = existingAccounts.OrderByDescending(x => x.Id).Select(x => x.Id).FirstOrDefault();
                         account.Id = greatestId + 1;
                         account.ForeignId = student.Id;
-                            account.Number = "000"+student.Id;
-                            newAccounts.Add(account);
-                        }
+                        account.Number = "000" + student.Id;
+                        newAccounts.Add(account);
                     }
-     
-
                 }
-                    if (existingAccounts != null)
-                      allAccounts.AddRange(existingAccounts);
-                    if(newAccounts!=null)
-                      allAccounts.AddRange(newAccounts);
 
-                    //write your list of new accounts to the database
-                       Store(allAccounts);
+
+            }
+            if (existingAccounts != null)
+                allAccounts.AddRange(existingAccounts);
+            if (newAccounts != null)
+                allAccounts.AddRange(newAccounts);
+
+            //write your list of new accounts to the database
+            Store(allAccounts);
         }
         public Account GetStudentAccount(Student student)
         {
@@ -177,18 +178,13 @@ namespace Omran.Sama.Services
                 var foundStudent = accounts.SingleOrDefault(x => x.ForeignId == student.Id);
                 return foundStudent;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Loger.Log(e.Message);
+                Log.Loger(e.Message);
                 return null;
             }
 
         }
-       
-       
-
-        }
-        }
-    
-
+    }
+}
 
